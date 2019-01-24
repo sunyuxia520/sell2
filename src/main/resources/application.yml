@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://134.98.1.43/sell?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=UTC
+  jpa:
+    show-sql: true
+    open-in-view: true
+server:
+  servlet:
+    context-path: /sell
+logging:
+  pattern:
+    console: "%d - %msg%n"
+
+#  日志输出文件指定到某个类  com.sxx.sell(包名)+ LoggerTest(类名)
+#  level:
+#    com.sxx.sell.LoggerTest: debug
+#    '/ ' 指的是在当前磁盘的根路径下创建spring文件夹和里面的log文件夹；使用spring.log作为默认日志名
+#  path: /spring/log
+#  指定完整路径则生成日志到指定的路径下
+#  file: D:/springboot.log
+#  不指定路径在当前项目下生成日志文件
+#  file: springboot.log
